@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Aman Kumar's portfolio featuring AI projects: API Response Formatter, Code Helper, and Smart Study Assistant." />
+  <title>Aman Kumar | AI Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Aman Kumar</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+        Menu
+      </button>
+      <nav class="nav" id="mainNav">
+        <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+        <a href="#tech-stack"><i class="fa-solid fa-microchip"></i> Tech Stack</a>
+        <a href="#demos"><i class="fa-solid fa-image"></i> Screenshots & Demos</a>
+        <a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <p class="tagline">AI Developer Portfolio</p>
+        <h1>Practical AI tools for students, developers, and data workflows.</h1>
+        <p class="lead">
+          I build useful AI applications with Python and the Groq API. This
+          portfolio showcases three focused projects with clear outputs and
+          real-world utility.
+        </p>
+        <a class="btn" href="#projects">Explore My Projects</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>API Response Formatter</h3>
+            <p>
+              AI-powered utility that transforms messy API responses into
+              clean, standardized JSON. It normalizes key names, improves
+              structure consistency, and converts primitive-like values.
+            </p>
+            <p class="card-meta">Use Case: Backend data cleanup and reliability.</p>
+            <p><a class="inline-link" href="https://github.com/amankmr21/API-Response-Formatter.git" target="_blank"
+                rel="noreferrer">View Code on GitHub</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Code Helper</h3>
+            <p>
+              Developer CLI assistant that explains code, flags likely bugs,
+              and suggests actionable improvements. Useful for faster code
+              reviews and better debugging workflows.
+            </p>
+            <p class="card-meta">Use Case: Developer productivity and quality.</p>
+            <p><a class="inline-link" href="https://github.com/amankmr21/Code-Helper.git" target="_blank"
+                rel="noreferrer">View Code on GitHub</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Smart Study Assistant</h3>
+            <p>
+              Study-focused assistant that summarizes notes, explains concepts
+              in beginner-friendly terms, and generates quiz questions with
+              answer keys.
+            </p>
+            <p class="card-meta">Use Case: Personalized AI study support.</p>
+            <p><a class="inline-link" href="https://github.com/amankmr21/Smart-Study-Assistant.git" target="_blank"
+                rel="noreferrer">View Code on GitHub</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech-stack" class="section section-alt">
+      <div class="container">
+        <h2>Tech Stack</h2>
+        <div class="chips">
+          <span>Python</span>
+          <span>Groq API</span>
+          <span>Groq SDK</span>
+          <span>Prompt Engineering</span>
+          <span>CLI Architecture</span>
+          <span>python-dotenv</span>
+          <span>JSON Processing</span>
+          <span>Git & GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="demos" class="section">
+      <div class="container">
+        <h2>Screenshots & Demos</h2>
+        <div class="demo-grid">
+          <div class="demo-box">
+            <h3>API Response Formatter Demo</h3>
+            <div data-gallery="api-response-formatter"></div>
+          </div>
+          <div class="demo-box">
+            <h3>Code Helper Demo</h3>
+            <div data-gallery="code-helper"></div>
+          </div>
+          <div class="demo-box">
+            <h3>Smart Study Assistant Demo</h3>
+            <div data-gallery="smart-study-assistant"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact Information</h2>
+        <p>Open to internships, freelance work, and collaboration.</p>
+        <div class="contact-card">
+          <ul class="contact-list">
+            <li class="contact-item" data-tooltip="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:amankmr250@gmail.com">amankmr250@gmail.com</a>
+            </li>
+            <li class="contact-item" data-tooltip="Call Phone">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919871063109">+91 98710 63109</a>
+            </li>
+            <li class="contact-item" data-tooltip="Open GitHub">
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/amankmr21" target="_blank" rel="noreferrer">github.com/amankmr21</a>
+            </li>
+            <li class="contact-item" data-tooltip="Open LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://linkedin.com/in/kmraman" target="_blank" rel="noreferrer">linkedin.com/in/kmraman</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Aman Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+    <div class="gallery-backdrop" data-close-gallery></div>
+    <div class="gallery-dialog" role="dialog" aria-label="Project screenshots">
+      <button class="gallery-close" type="button" data-close-gallery aria-label="Close gallery">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button class="gallery-nav gallery-prev" type="button" id="galleryPrev" aria-label="Previous image">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <figure class="gallery-figure">
+        <img id="galleryImage" src="" alt="Project screenshot" />
+      </figure>
+      <div class="gallery-caption" id="galleryCaption"></div>
+      <button class="gallery-nav gallery-next" type="button" id="galleryNext" aria-label="Next image">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="gallery-controls">
+        <button type="button" id="zoomOutBtn" aria-label="Zoom out">
+          <i class="fa-solid fa-magnifying-glass-minus"></i>
+        </button>
+        <button type="button" id="zoomResetBtn" aria-label="Reset zoom">100%</button>
+        <button type="button" id="zoomInBtn" aria-label="Zoom in">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
