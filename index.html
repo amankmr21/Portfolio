@@ -8,19 +8,22 @@
     content="Aman Kumar's portfolio featuring AI projects: API Response Formatter, Code Helper, and Smart Study Assistant." />
   <title>Aman Kumar | AI Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="container nav-wrap">
-      <a class="brand" href="#home">Aman Kumar</a>
+      <a class="brand" href="#home">AK</a>
       <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
         Menu
       </button>
       <nav class="nav" id="mainNav">
+        <a href="#about"><i class="fa-solid fa-user"></i> About</a>
         <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
-        <a href="#tech-stack"><i class="fa-solid fa-microchip"></i> Tech Stack</a>
         <a href="#demos"><i class="fa-solid fa-image"></i> Screenshots</a>
         <a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a>
       </nav>
@@ -30,13 +33,41 @@
   <main id="home">
     <section class="hero">
       <div class="container">
-        <p class="tagline">AI Developer Portfolio</p>
-        <h1>Practical AI tools for students, developers, and data workflows.</h1>
-        <p class="lead">
+        <h1 class="hero-name">Aman Kumar</h1>
+        <p class="tagline">Open to internships, entry-level roles, and freelance work—especially where I can build
+          practical AI-powered tools or useful web applications.</p>
+        <div class="hero-btns">
+          <a class="btn" href="#projects">Explore My Projects</a>
+          <a class="btn-outline"
+            href="https://drive.google.com/file/d/1nILg8H9OmV4nIAuPAXeEuC3ckfdIA-pL/view?usp=drive_link" target="_blank"
+            rel="noreferrer"><i class="fa-solid fa-download"></i> Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <h2>About</h2>
+        <p class="lead about-bio">
           I've been building AI-powered tools using Python and the Groq API. These projects focus on practical use cases
           like study assistance, code analysis, and data formatting.
         </p>
-        <a class="btn" href="#projects">Explore My Projects</a>
+        <p class="lead about-bio">
+          I'm a developer who enjoys building practical AI applications. I work with Python and the Groq API
+          to create tools that solve real problems — automating study sessions, reviewing code, and cleaning messy data.
+        </p>
+        <p class="about-stack-label">Tech and Tools I work with</p>
+        <div class="chips">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>JSON Processing</span>
+          <span>Git</span>
+          <span>API Integration</span>
+          <span>Claude Code</span>
+          <span>AntiGravity</span>
+        </div>
       </div>
     </section>
 
@@ -82,22 +113,6 @@
       </div>
     </section>
 
-    <section id="tech-stack" class="section section-alt">
-      <div class="container">
-        <h2>Tech Stack</h2>
-        <div class="chips">
-          <span>Python</span>
-          <span>Groq API</span>
-          <span>Groq SDK</span>
-          <span>Prompt Engineering</span>
-          <span>CLI Architecture</span>
-          <span>python-dotenv</span>
-          <span>JSON Processing</span>
-          <span>Git & GitHub</span>
-        </div>
-      </div>
-    </section>
-
     <section id="demos" class="section">
       <div class="container">
         <h2>Screenshots & Demos</h2>
@@ -121,8 +136,6 @@
     <section id="contact" class="section section-alt">
       <div class="container">
         <h2>Contact Information</h2>
-        <p>Open to internships, entry-level roles, and freelance work—especially where I can build practical AI-powered
-          tools or useful web applications.</p>
         <div class="contact-card">
           <ul class="contact-list">
             <li class="contact-item" data-tooltip="Send Email">
